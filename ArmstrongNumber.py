@@ -1,7 +1,6 @@
-#n=num = int(input(f'Enter the number: '))
+n=num = int(input(f'Enter the number: '))
 
-
-for x in range(0,20000):
+for x in range(0,n):
     n = num = x
     power = (len(str(n)))
     n_num = armstrong_num = 0
@@ -12,4 +11,5 @@ for x in range(0,20000):
         n = n // 10
 
     if (armstrong_num == num): print(f'input: {num} and output: {armstrong_num} => Amstrong number -> {armstrong_num == num}')
+
 print(f'last value of x {x}')
