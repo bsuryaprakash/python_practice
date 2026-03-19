@@ -1,4 +1,4 @@
-# Simple LCM calculator
+# Simple LCM calculator 
 def lcm(a, b):
     if a > b:
         greater = a

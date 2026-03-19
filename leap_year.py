@@ -5,7 +5,7 @@ def is_leap_year(year):
     else:
         return False
     
-# Example usage
+# Example usage 
 year = 2026
 if is_leap_year(year):
     print(f"{year} is a leap year.")
