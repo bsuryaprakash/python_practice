@@ -1,16 +1,17 @@
 # This is a program to find the armstrong number between 0 to n
-n=num = int(input(f'Enter the number: '))
 
-for x in range(0,n):
-    n = num = x
-    power = (len(str(n)))
-    n_num = armstrong_num = 0
-    while n != 0:
-        n_num = n % 10
-        armstrong_num = armstrong_num + pow(n_num, power)
-        #print(f'cube number {n_num} = {(pow(n_num, power))} and Armstrong number:{armstrong_num}')
-        n = n // 10
+num = int(input('Enter the number: '))
 
-    if (armstrong_num == num): print(f'input: {num} and output: {armstrong_num} => Amstrong number -> {armstrong_num == num}')
+n = num
+power = len(str(num))
+armstrong_num = 0
 
-print(f'last value of x {x}')
+while n != 0:
+    digit = n % 10 # gives the last digit of the number
+    armstrong_num += digit ** power
+    n //= 10 # division that discards decimal part
+
+if armstrong_num == num:
+    print(f"{num} is an Armstrong number")
+else:
+    print(f"{num} is NOT an Armstrong number")
