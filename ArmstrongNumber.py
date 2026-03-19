@@ -1,3 +1,4 @@
+# This is a program to find the armstrong number between 0 to n
 n=num = int(input(f'Enter the number: '))
 
 for x in range(0,n):
